@@ -3,62 +3,50 @@ baseurl:
 
 # Site settings
 title: Unifisher Farming
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+email: info@unifisher.com
+description: " Dedicated to sustainable agriculture and mushroom cultivation, we provide quality products and services to our customers. Our entrepreneurial journey began with home-based mushroom cultivation, and we are committed to growth and innovation"
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Ranjit Pradhan
   pic: 1
-  position: Lead Designer
+  position: 
   social:
-    - title: twitter
-      url: #
+  
     - title: facebook
       url: #
-    - title: stack-overflow
-      url: #
+   
 
-- name: Larry Parker
+- name: Debaprasad Dey
   pic: 2
-  position: Lead Marketer
+  position: 
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+ 
     - title: linkedin
       url: #
 
-- name: Diana Petersen
+- name: Abhijit Pradhan
   pic: 3
-  position: Lead Developer
+  position: 
   social:
-    - title: twitter
+    - title: linkedin
       url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+ 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
 
+  - title: facebook
+    url: https://www.facebook.com/UnifisherFarming/
+  - title: instagram
+    url: 
+  - title: linkedin
+    url: https://www.linkedin.com/company/105468634/admin/dashboard/
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Saipur, Kolkata
+  - line: West Bengal, India
 
 # Build settings
 markdown: kramdown
