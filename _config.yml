@@ -1,0 +1,53 @@
+url: https://www.unifisher.com
+baseurl: 
+
+# Site settings
+title: Unifisher Farming
+email: info@unifisher.com
+description: " Dedicated to sustainable agriculture and mushroom cultivation, we provide quality products and services to our customers. Our entrepreneurial journey began with home-based mushroom cultivation, and we are committed to growth and innovation"
+
+
+# Team names, titles and social links
+people:
+- name: Ranjit Pradhan
+  pic: 1
+  position: 
+  social:
+  
+    - title: linkedin
+      url: #
+   
+
+- name: Debaprasad Dey
+  pic: 2
+  position: 
+  social:
+ 
+    - title: linkedin
+      url: #
+
+- name: Abhijit Pradhan
+  pic: 3
+  position: 
+  social:
+    - title: linkedin
+      url: #
+ 
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+
+  - title: facebook
+    url: https://www.facebook.com/UnifisherFarming/
+  - title: instagram
+    url: 
+  - title: linkedin
+    url: https://www.linkedin.com/company/105468634/admin/dashboard/
+# Postal address (add as many lines as necessary)
+address:
+  - line: Saipur, Kolkata
+  - line: West Bengal, India
+
+# Build settings
+markdown: kramdown
+permalink: pretty
