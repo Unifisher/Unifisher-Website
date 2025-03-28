@@ -357,7 +357,7 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-size: 40px;
 }
 
@@ -892,5 +892,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
-
+.fa-stack-1x {
+    width: 80px; /* Adjust the width */
+    height: 80px; /* Adjust the height */
+    border-radius: 80px;
+    border-color: black;
+    border-width: 10px;
+}
 
