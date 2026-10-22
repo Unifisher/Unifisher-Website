@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" role="img" aria-labelledby="title desc">
+  <title id="title">Unifisher Farming</title>
+  <desc id="desc">Green leaf logo with the words Unifisher Farming.</desc>
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f8f5d"/>
+      <stop offset="100%" stop-color="#0c6a43"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(65 20)">
+    <path d="M210 255C180 180 100 140 30 120C70 90 142 81 198 109C288 156 302 238 210 255Z" fill="#0e6b43"/>
+    <path d="M188 255C204 222 230 185 273 155C310 127 350 116 390 116C342 151 323 206 295 255C278 286 246 303 210 314C194 307 182 286 188 255Z" fill="#0c6b43"/>
+    <path d="M240 150C280 176 295 209 291 246C242 229 214 198 206 160C207 146 222 138 240 150Z" fill="url(#leafGradient)"/>
+    <path d="M260 188C335 180 364 135 388 95C402 117 406 148 396 177C373 166 342 160 305 165C286 168 272 175 260 188Z" fill="url(#leafGradient)"/>
+    <path d="M226 151C175 150 123 181 89 233C152 245 208 244 259 218C244 192 234 171 226 151Z" fill="#0c6b43"/>
+
+    <g fill="#0d6b43">
+      <path d="M193 86L148 53L161 84L87 118L120 136L183 112L196 143L209 111L269 102L233 80L217 67L193 86Z"/>
+      <path d="M145 241L102 205L111 243L64 277L94 294L161 273L176 307L195 272L246 263L215 240L189 221L145 241Z"/>
+    </g>
+
+    <g fill="#0d6b43" font-family="'Segoe UI', 'Arial', sans-serif" font-weight="800" letter-spacing="-8px">
+      <text x="70" y="330" font-size="150">UF</text>
+    </g>
+  </g>
+
+  <g fill="#0d6b43" font-family="'Segoe UI', 'Arial', sans-serif" font-weight="700">
+    <text x="160" y="490" font-size="88">Unifisher</text>
+    <text x="180" y="570" font-size="88">Farming</text>
+  </g>
+</svg>
