@@ -1,41 +1,100 @@
-/* --- Global Container & Section Width Fix --- */
+/* --- Final Polish for Unifisher Farming Layouts --- */
 
-/* Force all sections and containers to stay nicely centered and bounded */
-.container, .product-section, .about-section, .contact-section, .services-section, .site-footer {
+/* 1. Ensure all main sections have identical max-width container bounds */
+section, .product-section, .about-section, .why-us-section, .contact-section, .site-footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section > .container, 
+.product-section > div, 
+.about-section > div, 
+.why-us-section > div, 
+.contact-section > div {
   max-width: 1160px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 24px !important;
-  padding-right: 24px !important;
-  box-sizing: border-box !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
 }
 
-/* Fix Product Grid stretching */
-.product-grid, .recipes-grid {
+/* 2. Fix 'Why Choose Us' 3-Column Modern Grid (Page 5) */
+#why-us .row, .why-us-grid, div:has(> .value-card) {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-  gap: 2rem !important;
-  width: 100% !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 2.5rem !important;
+  margin-top: 2.5rem !important;
+}
+
+.value-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(23, 62, 45, 0.08) !important;
+  border-radius: 14px !important;
+  padding: 2.5rem 2rem !important;
+  box-shadow: 0 10px 30px rgba(16, 44, 32, 0.06) !important;
+  text-align: center !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(16, 44, 32, 0.1) !important;
+}
+
+.value-icon {
+  font-size: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  background: #e8f5e9;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* 3. Modernize Contact Form Box & Button (Page 5) */
+.contact-form-wrap, form, #contactForm {
+  max-width: 720px !important;
   margin: 0 auto !important;
 }
 
-.product-card {
-  width: 100% !important;
-  max-width: none !important;
-  margin-bottom: 0 !important;
+.contact-section input, .contact-section textarea, 
+.form-control {
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 10px !important;
+  padding: 14px 18px !important;
+  font-size: 1rem !important;
+  background-color: #ffffff !important;
+  margin-bottom: 1.25rem !important;
 }
 
-/* Fix Image sizing inside cards */
-.product-card img, .product-image img, .recipe-img {
-  width: 100% !important;
+.contact-section input:focus, .contact-section textarea:focus,
+.form-control:focus {
+  border-color: #3d7950 !important;
+  box-shadow: 0 0 0 3px rgba(61, 121, 80, 0.15) !important;
+  outline: none !important;
+}
+
+.contact-section button[type="submit"], .btn-primary {
+  background-color: #d4a93d !important;
+  color: #102c20 !important;
+  font-weight: 700 !important;
+  padding: 0.9rem 2.5rem !important;
+  border-radius: 10px !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(212, 169, 61, 0.3) !important;
+  cursor: pointer !important;
+  width: 100%;
+}
+
+/* 4. Uniform Product Card Images */
+.product-card img, .product-image img {
   height: 240px !important;
   object-fit: cover !important;
-  border-top-left-radius: var(--radius) !important;
-  border-top-right-radius: var(--radius) !important;
-}
-
-/* Clean up form spacing */
-.contact-form-wrap, form {
-  max-width: 720px;
-  margin: 0 auto;
+  width: 100% !important;
 }
