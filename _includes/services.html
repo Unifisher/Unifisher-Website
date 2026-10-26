@@ -1,54 +1,76 @@
-<section id="products" class="product-section">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-12">
-        <h2 class="section-heading">Our Products</h2>
-        <p class="section-subheading">Fresh produce cultivated with care, purity, and sustainability.</p>
-      </div>
+<section id="products" style="padding: 5rem 1.5rem; background-color: #fffefa;">
+  <div class="container" style="max-width: 1160px; margin: 0 auto;">
+    
+    <!-- Section Heading -->
+    <div style="text-align: center; margin-bottom: 3.5rem;">
+      <p style="color: #3d7950; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
+        From our growing journey
+      </p>
+      <h2 style="font-size: 2.5rem; font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+        Our Products
+      </h2>
+      <p style="color: #55635b; max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">
+        Fresh produce cultivated with care, purity, and sustainability. Availability can vary by season, so get in touch for current stock and pricing.
+      </p>
     </div>
 
-    <div class="row text-center product-grid">
-      <div class="col-md-4">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="img/about/2.jpg" alt="Oyster Mushroom">
-          </div>
-          <h4>Oyster Mushroom</h4>
-          <p>Premium quality, rich in nutrition, and available year-round.</p>
+    <!-- Product Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem;">
+      
+      <!-- Product 1 -->
+      <div class="product-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
+          <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Oyster Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Mushroom Range</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Oyster Mushroom</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+            Premium quality, rich in nutrition, and available year-round for everyday home meals and food businesses.
+          </p>
+          <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hello%20Unifisher%20Farming,%20please%20share%20availability%20for%20Oyster%20Mushroom" target="_blank" rel="noopener" 
+             style="color: #173e2d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            Ask about availability ↗
+          </a>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="img/about/1.jpg" alt="Paddy Straw Mushroom">
-          </div>
-          <h4>Paddy Straw Mushroom</h4>
-          <p>Highly valued for taste, freshness, and natural farming practices.</p>
+      <!-- Product 2 -->
+      <div class="product-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
+          <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Paddy Straw Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Mushroom Range</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Paddy Straw Mushroom</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+            Highly valued for taste, freshness, and natural farming practices.
+          </p>
+          <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hello%20Unifisher%20Farming,%20please%20share%20availability%20for%20Paddy%20Straw%20Mushroom" target="_blank" rel="noopener" 
+             style="color: #173e2d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            Ask about availability ↗
+          </a>
         </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="product-card">
-          <div class="product-image">
-            <img src="img/about/3.jpeg" alt="Button Mushroom">
-          </div>
-          <h4>Button Mushroom</h4>
-          <p>Fresh and clean with a smooth texture and consistent quality.</p>
+      <!-- Product 3 -->
+      <div class="product-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
+          <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Button Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Mushroom Range</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Button Mushroom</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+            Fresh and clean with a smooth texture and consistent quality for all cuisines.
+          </p>
+          <a href="https://wa.me/{{ site.whatsapp_number }}?text=Hello%20Unifisher%20Farming,%20please%20share%20availability%20for%20Button%20Mushroom" target="_blank" rel="noopener" 
+             style="color: #173e2d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            Ask about availability ↗
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="row text-center product-grid secondary-grid">
-      <div class="col-md-12">
-        <div class="product-card featured">
-          <div class="product-image wide">
-            <img src="img/about/6.jpg" alt="Dragon Fruit">
-          </div>
-          <h4>Dragon Fruit</h4>
-          <p>Coming soon — an exciting future addition focused on diversity and premium farming.</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
