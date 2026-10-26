@@ -1,5 +1,5 @@
 <section id="products" style="padding: 5rem 1.5rem; background-color: #fffefa;">
-  <div class="container" style="max-width: 1160px; margin: 0 auto;">
+  <div style="max-width: 1160px; margin: 0 auto;">
     
     <!-- Section Heading -->
     <div style="text-align: center; margin-bottom: 3.5rem;">
@@ -14,11 +14,11 @@
       </p>
     </div>
 
-    <!-- Product Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem;">
+    <!-- Product Grid (3 Columns Max, Centered) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; justify-content: center;">
       
-      <!-- Product 1 -->
-      <div class="product-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+      <!-- Product 1: Oyster Mushroom -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
         <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
           <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Oyster Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
@@ -35,8 +35,8 @@
         </div>
       </div>
 
-      <!-- Product 2 -->
-      <div class="product-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+      <!-- Product 2: Paddy Straw Mushroom -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
         <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
           <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Paddy Straw Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
@@ -53,8 +53,8 @@
         </div>
       </div>
 
-      <!-- Product 3 -->
-      <div class="product-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+      <!-- Product 3: Button Mushroom -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
         <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
           <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Button Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
