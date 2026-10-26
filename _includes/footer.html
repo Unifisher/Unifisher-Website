@@ -1,6 +1,6 @@
 <footer class="site-footer">
   <div class="container site-footer__top">
-    <!-- Brand Title (Clean Text instead of oversized logo) -->
+    <!-- Brand Title -->
     <h3 style="margin: 0; color: #ffffff; font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em;">
       Unifisher Farming
     </h3>
@@ -10,21 +10,12 @@
     </p>
     
     <!-- Contact Info -->
-    <div class="footer-contact" style="margin: 1rem 0; font-size: 0.9rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
+    <div class="footer-contact" style="margin: 0.75rem 0 0; font-size: 0.9rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85);">
       <div>📍 <strong>Location:</strong> Saipur, Kolkata, West Bengal, India</div>
       <div>✉️ <strong>Email:</strong> <a href="mailto:{{ site.email }}" style="color: #95d5b2; text-decoration: underline;">{{ site.email }}</a></div>
       {% if site.whatsapp_number %}
         <div>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/{{ site.whatsapp_number }}" target="_blank" rel="noopener" style="color: #95d5b2; text-decoration: underline;">+{{ site.whatsapp_number }}</a></div>
       {% endif %}
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="footer-links" style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: 1rem;">
-      <a href="#products" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Products</a>
-      <a href="#recipes" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Recipes</a>
-      <a href="#about" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Our story</a>
-      <a href="#contact" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Contact</a>
-      <a href="mailto:{{ site.email }}" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Email us</a>
     </div>
   </div>
 
