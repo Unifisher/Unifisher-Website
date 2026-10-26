@@ -1,25 +1,32 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer class="site-footer">
+  <div class="container site-footer__top">
+    <a class="footer-brand" href="#home">
+      <img src="{{ '/img/logos/unifisher-logo.svg' | relative_url }}" alt="Unifisher Farming">
+    </a>
+    <p>Thoughtful farming. Quality produce.<br>Growing a little better, every day.</p>
+    
+    <!-- Direct Contact Details -->
+    <div class="footer-contact" style="margin: 1.25rem 0; font-size: 0.95rem; line-height: 1.8;">
+      <p style="margin: 0;">
+        📍 <strong>Location:</strong> Saipur, Kolkata, West Bengal, India<br>
+        ✉️ <strong>Email:</strong> <a href="mailto:{{ site.email }}" style="color: inherit; text-decoration: underline;">{{ site.email }}</a><br>
+        {% if site.whatsapp_number %}
+          💬 <strong>WhatsApp:</strong> <a href="https://wa.me/{{ site.whatsapp_number }}" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">+{{ site.whatsapp_number }}</a>
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#products">Products</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#about">Our story</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:{{ site.email }}">Email us</a>
+    </div>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <span>© {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</span>
+    <span>Saipur, Kolkata · West Bengal, India</span>
+  </div>
+</footer>
