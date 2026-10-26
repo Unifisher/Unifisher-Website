@@ -1,38 +1,19 @@
-<header class="unifisher-hero" id="page-top">
-  <nav class="navbar navbar-default navbar-fixed-top unifisher-nav">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top" aria-label="Unifisher Farming home">
-          <img src="{{ '/img/logos/unifisher-logo.svg' | prepend: site.baseurl }}" alt="Unifisher Farming" class="brand-logo">
-        </a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="page-scroll" href="#products">Products</a></li>
-          <li><a class="page-scroll" href="#about">About</a></li>
-          <li><a class="page-scroll" href="#why-us">Why Us</a></li>
-          <li><a class="page-scroll" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="intro-text">
-      <div class="intro-kicker">Sustainable agriculture & mushroom farming</div>
-      <h1>Fresh, healthy food grown with care.</h1>
-      <p>We cultivate premium mushrooms and natural produce with a focus on sustainability, quality, and trusted growth.</p>
-      <div class="hero-actions">
-        <a href="#products" class="btn btn-xl btn-primary">Explore Products</a>
-        <a href="#contact" class="btn btn-xl btn-secondary">Contact Us</a>
-      </div>
-    </div>
+<header class="site-header" id="page-top">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Unifisher Farming home" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+      <img src="{{ '/img/logos/unifisher-farming.jpeg' | relative_url }}" alt="Unifisher Farming Logo" style="height: 52px; width: 52px; object-fit: contain; border-radius: 8px; background: #ffffff; padding: 2px;">
+      <span style="color: #ffffff; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.01em;">Unifisher Farming</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+      <a href="#products">Products</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#about">About</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta js-whatsapp-link" href="#contact" data-message="Hello Unifisher Farming, I would like to enquire about your products.">Enquire <span aria-hidden="true">↗</span></a>
+    </nav>
   </div>
 </header>
