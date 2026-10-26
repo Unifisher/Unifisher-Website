@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Fresh Mushrooms & Sustainable Farming in Kolkata
@@ -101,7 +100,7 @@ title: Fresh Mushrooms & Sustainable Farming in Kolkata
 
     <div class="recipe-grid">
       {% if site.recipes %}
-        {% assign featured_recipes = site.recipes | sort: "order" %}
+        {% assign featured_recipes = site.recipes | where_exp: "recipe", "recipe.order != nil" | sort: "order" %}
         {% for recipe in featured_recipes limit: 6 %}
           <article class="recipe-card">
             <a class="recipe-card__image" href="{{ recipe.url | relative_url }}">
@@ -137,7 +136,7 @@ title: Fresh Mushrooms & Sustainable Farming in Kolkata
     <div class="about-band__content">
       <p class="eyebrow"><span class="eyebrow__line"></span> A little about us</p>
       <h2>Farming with care.<br><em>Growing with purpose.</em></h2>
-      <p>Unifisher Farming is an agricultural venture based in Kolkata, West Bengal, focused on mushroom cultivation and sustainable farming. Our journey is driven by a simple idea: grow thoughtfully, care about quality and build trust with every customer.</p>
+      <p>Unifisher Farming is an agricultural venture based in Kolkata, West Bengal, focused on mushroom cultivation and sustainable farming. Our journey is driven by a simple idea: grow thoughtfully, serve honestly and build a more sustainable future.</p>
       <p>As we grow, we aim to bring customers dependable produce and clear communication—from product enquiries to order coordination.</p>
       <a class="button button--green" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
     </div>
