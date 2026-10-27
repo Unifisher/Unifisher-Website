@@ -1,4 +1,4 @@
-/* --- Final Polish for Unifisher Farming Layouts --- */
+/* --- Final Polish & Responsive Layouts for Unifisher Farming --- */
 
 /* 1. Ensure all main sections have identical max-width container bounds */
 section, .product-section, .about-section, .why-us-section, .contact-section, .site-footer {
@@ -18,11 +18,11 @@ section > .container,
   padding-right: 1.5rem !important;
 }
 
-/* 2. Fix 'Why Choose Us' 3-Column Modern Grid (Page 5) */
+/* 2. Fix 'Why Choose Us' 3-Column Modern Grid */
 #why-us .row, .why-us-grid, div:has(> .value-card) {
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-  gap: 2.5rem !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 2rem !important;
   margin-top: 2.5rem !important;
 }
 
@@ -57,10 +57,11 @@ section > .container,
   border-radius: 50%;
 }
 
-/* 3. Modernize Contact Form Box & Button (Page 5) */
+/* 3. Modernize Contact Form Box & Button */
 .contact-form-wrap, form, #contactForm {
   max-width: 720px !important;
   margin: 0 auto !important;
+  width: 100% !important;
 }
 
 .contact-section input, .contact-section textarea, 
@@ -71,6 +72,8 @@ section > .container,
   font-size: 1rem !important;
   background-color: #ffffff !important;
   margin-bottom: 1.25rem !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .contact-section input:focus, .contact-section textarea:focus,
@@ -89,7 +92,7 @@ section > .container,
   border: none !important;
   box-shadow: 0 4px 15px rgba(212, 169, 61, 0.3) !important;
   cursor: pointer !important;
-  width: 100%;
+  width: 100% !important;
 }
 
 /* 4. Uniform Product Card Images */
@@ -97,4 +100,20 @@ section > .container,
   height: 240px !important;
   object-fit: cover !important;
   width: 100% !important;
+}
+
+/* 5. Mobile & Tablet Responsive Adjustments */
+@media (max-width: 768px) {
+  section > .container, 
+  .product-section > div, 
+  .about-section > div, 
+  .why-us-section > div, 
+  .contact-section > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .value-card {
+    padding: 1.75rem 1.25rem !important;
+  }
 }
