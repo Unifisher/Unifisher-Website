@@ -7,8 +7,10 @@
 
     {% include header.html %}
 
-    <!-- Page Content Rendered Here -->
-    {{ content }}
+    <!-- Main Content Wrapper with proper top padding -->
+    <main style="padding-top: 76px; min-height: 80vh;">
+      {{ content }}
+    </main>
 
     {% include footer.html %}
     {% include js.html %}
