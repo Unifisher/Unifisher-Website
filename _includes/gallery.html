@@ -1,1 +1,82 @@
+<section id="gallery" style="padding: 5rem 1.5rem; background-color: #f9faf8;">
+  <div style="max-width: 1160px; margin: 0 auto;">
+    
+    <!-- Section Heading -->
+    <div style="text-align: center; margin-bottom: 3.5rem;">
+      <p style="color: #3d7950; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
+        Inside Unifisher Farming
+      </p>
+      <h2 style="font-size: 2.5rem; font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+        Farm Photo Gallery
+      </h2>
+      <p style="color: #55635b; max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">
+        Explore real snapshots from our cultivation units, livestock care, and fresh harvests organized by product lines.
+      </p>
+    </div>
 
+    <!-- Gallery Grid (Product-wise Categories) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; justify-content: center;">
+      
+      <!-- Category 1: Mushroom Cultivation -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
+          <!-- Replace with your actual mushroom farm photo path -->
+          <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Mushroom Cultivation" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Cultivation Unit</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Mushroom Farm</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Controlled-environment climate rooms optimized for growing fresh Oyster and Paddy Straw mushrooms.
+          </p>
+        </div>
+      </div>
+
+      <!-- Category 2: Dairy Unit -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
+          <!-- Replace with your actual dairy farm photo path -->
+          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Dairy Farming" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Livestock Unit</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Dairy Operations</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Hygienically maintained dairy housing focused on animal welfare and pure milk production.
+          </p>
+        </div>
+      </div>
+
+      <!-- Category 3: Poultry Unit -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
+          <!-- Replace with your actual poultry farm photo path -->
+          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80" alt="Poultry Farming" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Free-Range Unit</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Poultry Rearing</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Secure and well-ventilated free-range environments ensuring healthy growth and high quality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Category 4: Fish Aquaculture (Bengal Koi) -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column;">
+        <div style="height: 240px; background: #f8fafc; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <!-- Uses your uploaded koi-climbing-perch.jpg image -->
+          <img src="{{ '/img/koi-climbing-perch.jpg' | relative_url }}" alt="Bengal Koi Aquaculture" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+        </div>
+        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Aquaculture Unit</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Fish Pond & Bengal Koi</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+            Clean, nutrient-managed ponds dedicated to cultivating premium freshwater fish like Bengal Koi.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
