@@ -1,42 +1,62 @@
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Contact Us</h2>
-        <p class="section-subheading">We’d love to hear from you.</p>
+<section id="contact" class="contact-section" style="padding: 5rem 1.5rem; background-color: #f6f5ed;">
+  <div class="container" style="max-width: 720px; margin: 0 auto;">
+    
+    <!-- Section Heading -->
+    <div class="row" style="margin-bottom: 2.5rem;">
+      <div class="col-lg-12 text-center" style="text-align: center;">
+        <p style="color: #3d7950; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
+          Get in Touch
+        </p>
+        <h2 class="section-heading" style="font-size: 2.5rem; font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+          Contact Us
+        </h2>
+        <p class="section-subheading" style="color: #55635b; font-size: 1.05rem; margin: 0;">
+          We’d love to hear from you. Send us a message and we’ll respond promptly.
+        </p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="control-group form-group">
-                <input type="text" class="form-control" placeholder="Your Name *" id="name" required>
-              </div>
+    <!-- Contact Form Card -->
+    <div style="background: #ffffff; padding: 3rem 2.5rem; border-radius: 16px; border: 1px solid rgba(23, 62, 45, 0.08); box-shadow: 0 15px 35px rgba(16, 44, 32, 0.06);">
+      <form name="sentMessage" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+        <div class="row" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+            <div class="control-group form-group">
+              <label for="name" style="display: block; font-size: 0.9rem; font-weight: 600; color: #173e2d; margin-bottom: 0.5rem;">Your Name *</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" id="name" name="name" required
+                     style="width: 100%; padding: 0.85rem 1rem; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; background-color: #fafaf9; box-sizing: border-box; outline: none;">
             </div>
-            <div class="col-md-6">
-              <div class="control-group form-group">
-                <input type="email" class="form-control" placeholder="Your Email *" id="email" required>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="control-group form-group">
-                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="control-group form-group">
-                <textarea class="form-control" placeholder="Your Message *" id="message" required></textarea>
-              </div>
-            </div>
-            <div class="col-lg-12 text-center">
-              <button type="submit" class="btn btn-xl btn-primary">Send Message</button>
+
+            <div class="control-group form-group">
+              <label for="email" style="display: block; font-size: 0.9rem; font-weight: 600; color: #173e2d; margin-bottom: 0.5rem;">Your Email *</label>
+              <input type="email" class="form-control" placeholder="name@example.com" id="email" name="email" required
+                     style="width: 100%; padding: 0.85rem 1rem; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; background-color: #fafaf9; box-sizing: border-box; outline: none;">
             </div>
           </div>
-        </form>
-      </div>
+
+          <div class="control-group form-group">
+            <label for="phone" style="display: block; font-size: 0.9rem; font-weight: 600; color: #173e2d; margin-bottom: 0.5rem;">Your Phone *</label>
+            <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" id="phone" name="phone" required
+                   style="width: 100%; padding: 0.85rem 1rem; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; background-color: #fafaf9; box-sizing: border-box; outline: none;">
+          </div>
+
+          <div class="control-group form-group">
+            <label for="message" style="display: block; font-size: 0.9rem; font-weight: 600; color: #173e2d; margin-bottom: 0.5rem;">Your Message *</label>
+            <textarea class="form-control" placeholder="How can we help you with our products or farming?" id="message" name="message" rows="4" required
+                      style="width: 100%; padding: 0.85rem 1rem; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 1rem; background-color: #fafaf9; box-sizing: border-box; outline: none; resize: vertical;"></textarea>
+          </div>
+
+          <div class="text-center" style="text-align: center; margin-top: 0.75rem;">
+            <button type="submit" class="btn btn-xl btn-primary" 
+                    style="background-color: #d4a93d !important; color: #102c20 !important; font-weight: 700; padding: 0.95rem 2.5rem; border-radius: 8px; border: none; font-size: 1rem; cursor: pointer; box-shadow: 0 4px 15px rgba(212, 169, 61, 0.35); width: 100%;">
+              Send Message ↗
+            </button>
+          </div>
+
+        </div>
+      </form>
     </div>
+
   </div>
 </section>
