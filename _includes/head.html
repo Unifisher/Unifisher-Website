@@ -14,6 +14,32 @@
     <!-- Custom CSS & Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 
+    <!-- Full-Width Edge-to-Edge CSS Reset -->
+    <style>
+      html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+      }
+
+      /* Remove default gutters & margins pushing away from viewport borders */
+      .navbar, header, nav, section, footer {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Ensure top navigation bar sits completely flush */
+      .navbar-default, .navbar-fixed-top {
+        margin: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+      }
+    </style>
+
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ '/css/font-awesome/css/font-awesome.min.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
