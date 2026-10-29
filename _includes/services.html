@@ -1,12 +1,12 @@
-<section id="products" style="padding: 5rem 1.5rem; background-color: #fffefa;">
+<section id="products" style="padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem); background-color: #fffefa;">
   <div style="max-width: 1160px; margin: 0 auto;">
     
     <!-- Section Heading -->
-    <div style="text-align: center; margin-bottom: 3.5rem;">
+    <div style="text-align: center; margin-bottom: clamp(2rem, 5vw, 3.5rem);">
       <p style="color: #3d7950; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
         From our growing journey
       </p>
-      <h2 style="font-size: 2.5rem; font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+      <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
         Our Products
       </h2>
       <p style="color: #55635b; max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">
@@ -14,8 +14,8 @@
       </p>
     </div>
 
-    <!-- Product Grid (3 Columns Max, Centered) -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; justify-content: center;">
+    <!-- Product Grid (3 Balanced Columns on Desktop) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1.25rem, 3vw, 2rem); align-items: stretch;">
       
       <!-- Product 1: Oyster Mushroom -->
       <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; position: relative;">
@@ -23,10 +23,10 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #2e7d32; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block;"></span> Harvest Ready
         </div>
-        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
-          <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Oyster Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
+          <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Oyster Mushroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Oyster Mushroom</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
             Premium quality, rich in nutrition, and available year-round for everyday home meals and food businesses.
@@ -44,10 +44,10 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b45309; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #f59e0b; border-radius: 50%; display: inline-block;"></span> Seasonal / Limited
         </div>
-        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
-          <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Paddy Straw Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
+          <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Paddy Straw Mushroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Paddy Straw Mushroom</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
             Highly valued for taste, freshness, and natural farming practices.
@@ -65,10 +65,10 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b91c1c; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%; display: inline-block;"></span> Not Available
         </div>
-        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
-          <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Button Mushroom" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
+          <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Button Mushroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Button Mushroom</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
             Fresh and clean with a smooth texture and consistent quality for all cuisines.

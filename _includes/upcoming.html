@@ -1,12 +1,12 @@
-<section id="upcoming" style="padding: 5rem 1.5rem; background-color: #fffefa; border-top: 1px solid rgba(23,62,45,0.08);">
+<section id="upcoming" style="padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem); background-color: #fffefa; border-top: 1px solid rgba(23,62,45,0.08);">
   <div style="max-width: 1160px; margin: 0 auto;">
     
     <!-- Section Heading -->
-    <div style="text-align: center; margin-bottom: 3.5rem;">
+    <div style="text-align: center; margin-bottom: clamp(2rem, 5vw, 3.5rem);">
       <p style="color: #b45309; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
         Expanding Our Farm Offerings
       </p>
-      <h2 style="font-size: 2.5rem; font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+      <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
         Upcoming Products
       </h2>
       <p style="color: #55635b; max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">
@@ -14,8 +14,8 @@
       </p>
     </div>
 
-    <!-- Product Grid (3 Columns Max, Centered) -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; justify-content: center;">
+    <!-- Product Grid (3 Balanced Columns on Desktop) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1.25rem, 3vw, 2rem); align-items: stretch;">
       
       <!-- Upcoming Item 1: Dairy Products -->
       <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; position: relative;">
@@ -23,10 +23,10 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b45309; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #f59e0b; border-radius: 50%; display: inline-block;"></span> Coming Soon
         </div>
-        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
-          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Dairy Farm" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Dairy Farm" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Farm Dairy</span>
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Pure Dairy Products</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
@@ -45,10 +45,10 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b45309; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #f59e0b; border-radius: 50%; display: inline-block;"></span> In Development
         </div>
-        <div style="height: 240px; background: #e5e7eb; overflow: hidden;">
-          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80" alt="Poultry Farm" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80" alt="Poultry Farm" style="width: 100%; height: 100%; object-fit: cover; display: block;">
         </div>
-        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Free-Range Poultry</span>
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Quality Poultry</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
@@ -67,11 +67,10 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #1d4ed8; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #3b82f6; border-radius: 50%; display: inline-block;"></span> Upcoming Line
         </div>
-        <div style="height: 240px; background: #f8fafc; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-          <!-- Uses your uploaded koi-climbing-perch.jpg image -->
-          <img src="{{ '/img/koi-climbing-perch.jpg' | relative_url }}" alt="Local Indian Fish - Bengal Koi" style="width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+        <div style="height: 220px; background: #f8fafc; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="{{ '/img/koi-climbing-perch.jpg' | relative_url }}" alt="Local Indian Fish - Bengal Koi" style="width: 100%; height: 100%; object-fit: contain; padding: 10px; display: block;">
         </div>
-        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.5rem; display: block;">Aquaculture</span>
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Local Indian Fish</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
