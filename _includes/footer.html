@@ -1,8 +1,8 @@
 <footer style="background-color: #102c20; color: #d1d5db; padding: clamp(3rem, 6vw, 4.5rem) clamp(1rem, 4vw, 2rem) 2rem; border-top: 1px solid rgba(212, 169, 61, 0.2); width: 100%; box-sizing: border-box;">
-  <div style="max-width: 1160px; margin: 0 auto;">
+  <div style="max-width: 1200px; margin: 0 auto;">
     
-    <!-- Top Columns Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.5rem; margin-bottom: 3rem;">
+    <!-- Top Columns Grid: 4 Columns with Map -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.5rem; margin-bottom: 3rem; align-items: start;">
       
       <!-- Brand & Mission -->
       <div>
@@ -48,10 +48,29 @@
         </p>
       </div>
 
+      <!-- Our Location (Google Map) -->
+      <div>
+        <h4 style="color: #ffffff; font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+          Our Location
+        </h4>
+        <div style="border-radius: 10px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 4px 14px rgba(0,0,0,0.25); height: 180px; width: 100%;">
+          <iframe 
+            title="Unifisher Farming Location Map"
+            src="https://maps.google.com/maps?q=Saipur,%20Kolkata,%20West%20Bengal&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border: 0; display: block;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
     </div>
 
     <!-- Bottom Bar / Copyright -->
-    <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.85rem; color: #6b7280;">
+    <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.85rem; color: #9ca3af;">
       <div>
         &copy; {{ site.time | date: '%Y' }} Unifisher Farming. All rights reserved.
       </div>
