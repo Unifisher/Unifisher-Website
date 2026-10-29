@@ -1,34 +1,59 @@
 ---
 layout: subpage
-title: Dairy Farm Gallery - Unifisher Farming
+title: Dairy Operations Gallery - Unifisher Farming
 permalink: /gallery/dairy.html
 ---
 
-<section style="width: 100%; padding: 6rem 1.5rem 4rem; background: #102c20; color: #ffffff; text-align: center; box-sizing: border-box;">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Dairy Farm Gallery</h1>
-    <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem;">A look at our hygienically maintained livestock and dairy operations.</p>
-  </div>
-</section>
-
-<section style="width: 100%; padding: 4rem 1.5rem; background-color: #fffefa; box-sizing: border-box;">
+<section style="width: 100%; padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem) clamp(2.5rem, 5vw, 4rem); background-color: #fffefa; box-sizing: border-box; min-height: 70vh;">
   <div style="max-width: 1160px; width: 100%; margin: 0 auto; box-sizing: border-box;">
     
-    <!-- Photo Grid -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; width: 100%;">
+    <!-- Section Heading -->
+    <div style="text-align: center; margin-bottom: clamp(2rem, 5vw, 3rem);">
+      <h1 style="font-size: clamp(1.85rem, 4vw, 2.5rem); font-weight: 800; color: #173e2d; margin: 0 0 0.75rem; line-height: 1.2;">
+        Dairy Operations Gallery
+      </h1>
+      <p style="color: #55635b; max-width: 600px; margin: 0 auto; font-size: clamp(0.95rem, 2vw, 1.05rem); line-height: 1.6;">
+        Hygienically maintained dairy housing focused on animal welfare, balanced nutrition, and pure milk production.
+      </p>
+    </div>
+
+    <!-- Photo Grid (Fluid Columns) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(1.25rem, 3vw, 2rem); width: 100%; justify-content: center;">
       
-      <!-- Photo Card -->
-      <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background: #ffffff;">
-        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Dairy Operations" style="width: 100%; height: 260px; object-fit: cover;">
-        <div style="padding: 1rem; font-size: 0.95rem; font-weight: 600; color: #173e2d; text-align: center;">
-          Dairy Housing & Operations
+      <!-- Photo Card 1 -->
+      <div class="gallery-photo-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(16,44,32,0.06); background: #ffffff; border: 1px solid rgba(23,62,45,0.08); transition: transform 0.25s ease, box-shadow 0.25s ease;">
+        <div style="height: 240px; overflow: hidden; background: #e5e7eb;">
+          <img src="{{ '/img/header-bg.jpg' | relative_url }}" alt="Dairy Cattle Housing" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+        </div>
+        <div style="padding: 1.25rem 1rem; font-size: 1rem; font-weight: 600; color: #173e2d; text-align: center;">
+          Clean & Ventilated Cattle Sheds
+        </div>
+      </div>
+
+      <!-- Photo Card 2 -->
+      <div class="gallery-photo-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(16,44,32,0.06); background: #ffffff; border: 1px solid rgba(23,62,45,0.08); transition: transform 0.25s ease, box-shadow 0.25s ease;">
+        <div style="height: 240px; overflow: hidden; background: #e5e7eb;">
+          <img src="{{ '/img/website-banner.png' | relative_url }}" alt="Feed and Nutrition Management" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+        </div>
+        <div style="padding: 1.25rem 1rem; font-size: 1rem; font-weight: 600; color: #173e2d; text-align: center;">
+          Green Fodder & Balanced Diet Care
+        </div>
+      </div>
+
+      <!-- Photo Card 3 -->
+      <div class="gallery-photo-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 6px 20px rgba(16,44,32,0.06); background: #ffffff; border: 1px solid rgba(23,62,45,0.08); transition: transform 0.25s ease, box-shadow 0.25s ease;">
+        <div style="height: 240px; overflow: hidden; background: #e5e7eb;">
+          <img src="{{ '/img/koi-climbing-perch.jpg' | relative_url }}" alt="Milking and Hygiene Routine" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+        </div>
+        <div style="padding: 1.25rem 1rem; font-size: 1rem; font-weight: 600; color: #173e2d; text-align: center;">
+          Hygienic Milking & Storage Routine
         </div>
       </div>
 
     </div>
-    
-    <div style="margin-top: 3rem; text-align: center;">
-      <a href="{{ '/' | relative_url }}#gallery" style="color: #173e2d; font-weight: 700; text-decoration: none;">← Back to Main Gallery</a>
-    </div>
-  </div>
-</section>
+
+    <!-- Wholesale / Inquiry CTA Box -->
+    <div style="margin-top: clamp(2.5rem, 5vw, 3.5rem); background: #f6f5ed; border: 1.5px dashed rgba(212, 169, 61, 0.6); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; max-width: 650px; margin-left: auto; margin-right: auto;">
+      <h3 style="font-size: 1.25rem; font-weight: 700; color: #173e2d; margin: 0 0 0.5rem;">Inquire About Farm-Fresh Dairy</h3>
+      <p style="color: #55635b; font-size: 0.95rem; margin: 0 0 1.25rem;">Directly sourced from our Saipur unit with zero compromises on quality and purity.</p>
+      <a href="
