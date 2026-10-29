@@ -1,3 +1,62 @@
+---
+# Front matter tells Jekyll to process this file
+---
+
 {% include css/bootstrap.min.css %}
 {% include css/agency.css %}
-{{ content }}
+
+/* ========================================================
+   GLOBAL MOBILE-RESPONSIVE FOUNDATION
+   ======================================================== */
+
+/* 1. Global Box Sizing & Overflow Protection */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Fluid Media Scaling (Images, Embeds & Videos) */
+img, 
+iframe, 
+svg, 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+/* 3. Mobile Viewport Adjustments (Tablets & Phones <= 768px) */
+@media (max-width: 768px) {
+  /* Prevent contact form inputs/buttons from overflowing viewport */
+  #contact form,
+  #contact form .form-group,
+  #contact form .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  #contact form input,
+  #contact form textarea,
+  #contact form select,
+  #contact form button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  /* Ensure text headings wrap cleanly without hyphen cutoffs */
+  h1, h2, h3 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}

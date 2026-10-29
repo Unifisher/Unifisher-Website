@@ -1,5 +1,5 @@
-<footer style="background-color: #102c20; color: #f3f4f6; padding: 4rem 1.5rem 2rem; border-top: 4px solid #d4a93d; margin-top: 4rem;">
-  <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-bottom: 3rem;">
+<footer style="background-color: #102c20; color: #f3f4f6; padding: clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem) 2rem; border-top: 4px solid #d4a93d; margin-top: clamp(2.5rem, 5vw, 4rem); break-inside: avoid; page-break-inside: avoid; box-sizing: border-box;">
+  <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 2.5rem;">
     
     <!-- Brand / Column 1 -->
     <div>
@@ -10,7 +10,7 @@
       <p style="color: rgba(255, 255, 255, 0.75); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.25rem;">
         Thoughtful farming. Quality produce.<br>Growing a little better, every day.
       </p>
-      <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin: 0; font-size: 0.9rem;">
+      <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; margin: 0; font-size: 0.9rem; word-break: break-word;">
         📍 Saipur, Kolkata, West Bengal, India<br>
         ✉️ <a href="mailto:{{ site.email }}" style="color: #95d5b2; text-decoration: underline;">{{ site.email }}</a><br>
         💬 WhatsApp: <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener" style="color: #95d5b2; text-decoration: underline;">+91 89672 11315</a><br>
@@ -23,29 +23,32 @@
     <div>
       <h4 style="color: #ffffff; margin-bottom: 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Links</h4>
       <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 0.95rem;">
-        <li><a href="#products" style="color: rgba(255,255,255,0.8); text-decoration: none;">Products</a></li>
-        <li><a href="#about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
-        <li><a href="#why-us" style="color: rgba(255,255,255,0.8); text-decoration: none;">Why Us</a></li>
-        <li><a href="#contact" style="color: rgba(255,255,255,0.8); text-decoration: none;">Contact</a></li>
+        <li><a href="{{ '/' | relative_url }}#products" style="color: rgba(255,255,255,0.8); text-decoration: none;">Products</a></li>
+        <li><a href="{{ '/' | relative_url }}#upcoming" style="color: rgba(255,255,255,0.8); text-decoration: none;">Upcoming</a></li>
+        <li><a href="{{ '/' | relative_url }}#gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+        <li><a href="{{ '/' | relative_url }}#recipes" style="color: rgba(255,255,255,0.8); text-decoration: none;">Recipes</a></li>
+        <li><a href="{{ '/' | relative_url }}#about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
+        <li><a href="{{ '/' | relative_url }}#why-us" style="color: rgba(255,255,255,0.8); text-decoration: none;">Why Us</a></li>
+        <li><a href="{{ '/' | relative_url }}#contact" style="color: rgba(255,255,255,0.8); text-decoration: none;">Contact</a></li>
       </ul>
     </div>
 
     <!-- Google Map / Column 3 -->
     <div>
       <h4 style="color: #ffffff; margin-bottom: 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Find Us on Map</h4>
-      <div style="background: #ffffff; border-radius: 8px; overflow: hidden; border: 2px solid rgba(212,169,61,0.5); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+      <div style="background: #ffffff; border-radius: 8px; overflow: hidden; border: 2px solid rgba(212,169,61,0.5); box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 100%;">
         <div style="width: 100%; height: 160px; background: #e5e7eb;">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.599255604375!2d87.4038095!3d21.9115024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d29deb764f9cb%3A0xeb883f0be2e11057!2sUnifisher%20Farming!5e0!3m2!1sen!2sin!4v1793122297571!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="strict-origin-when-cross-origin"
-                title="Unifisher Farming Location Map">
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  title="Unifisher Farming Location Map">
           </iframe>
         </div>
-        <div style="background: #102c20; padding: 8px 12px; text-align: center;">
+        <div style="background: #102c20; padding: 10px 12px; text-align: center;">
           <a href="https://maps.app.goo.gl/u6HWx731t1iLLSG66" target="_blank" rel="noopener" style="color: #d4a93d; font-size: 0.85rem; font-weight: 700; text-decoration: none; display: inline-block;">
             Open Exact Location in Google Maps ↗
           </a>
@@ -56,7 +59,7 @@
   </div>
 
   <!-- Bottom Copyright Bar -->
-  <div style="max-width: 1160px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.875rem; color: rgba(255, 255, 255, 0.55);">
+  <div style="max-width: 1160px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.6);">
     <span>© {{ site.time | date: '%Y' }} Unifisher Farming. All rights reserved.</span>
     <span>Saipur, Kolkata · West Bengal, India</span>
   </div>
@@ -65,11 +68,10 @@
 <!-- Floating WhatsApp Quick-Chat Widget -->
 <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener" 
    aria-label="Chat with Unifisher Farming on WhatsApp"
-   style="position: fixed; bottom: 25px; right: 25px; z-index: 9999; background-color: #25d366; color: #ffffff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-decoration: none; transition: transform 0.3s ease;"
-   onmouseover="this.style.transform='scale(1.1)'" 
+   style="position: fixed; bottom: clamp(16px, 3vw, 25px); right: clamp(16px, 3vw, 25px); z-index: 9999; background-color: #25d366; color: #ffffff; width: clamp(48px, 10vw, 58px); height: clamp(48px, 10vw, 58px); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-decoration: none; transition: transform 0.25s ease;"
+   onmouseover="this.style.transform='scale(1.08)'" 
    onmouseout="this.style.transform='scale(1)'">
-  <!-- WhatsApp SVG Icon -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="#ffffff">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 55%; height: 55%; fill: #ffffff;">
     <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.6 66.4 14 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
   </svg>
 </a>
