@@ -1,25 +1,84 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<footer style="background-color: #102c20; color: #d1d5db; padding: clamp(3rem, 6vw, 4.5rem) clamp(1rem, 4vw, 2rem) 2rem; border-top: 1px solid rgba(212, 169, 61, 0.2); width: 100%; box-sizing: border-box;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    
+    <!-- Top Columns Grid: 4 Columns with Map -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2.5rem; margin-bottom: 3rem; align-items: start;">
+      
+      <!-- Brand & Mission -->
+      <div>
+        <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin: 0 0 1rem;">
+          Unifisher Farming
+        </h3>
+        <p style="color: #9ca3af; font-size: 0.95rem; line-height: 1.6; margin: 0 0 1rem;">
+          Cultivating fresh oyster and specialty mushrooms, sustainably managed dairy, poultry, and local fish from Saipur, Kolkata.
+        </p>
+        <p style="font-size: 0.85rem; color: #d4a93d; margin: 0; font-weight: 600;">
+          FSSAI Reg: 22825231000098
+        </p>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div>
+        <h4 style="color: #ffffff; font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+          Quick Links
+        </h4>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.95rem;">
+          <li><a href="{{ '/#products' | relative_url }}" style="color: #9ca3af; text-decoration: none;">Products</a></li>
+          <li><a href="{{ '/#upcoming' | relative_url }}" style="color: #9ca3af; text-decoration: none;">Upcoming Lines</a></li>
+          <li><a href="{{ '/#gallery' | relative_url }}" style="color: #9ca3af; text-decoration: none;">Farm Gallery</a></li>
+          <li><a href="{{ '/#recipes' | relative_url }}" style="color: #9ca3af; text-decoration: none;">Recipes</a></li>
+          <li><a href="{{ '/#about' | relative_url }}" style="color: #9ca3af; text-decoration: none;">About Us</a></li>
+          <li><a href="{{ '/#contact' | relative_url }}" style="color: #9ca3af; text-decoration: none;">Contact & Inquiry</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Operations -->
+      <div>
+        <h4 style="color: #ffffff; font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+          Contact Us
+        </h4>
+        <p style="color: #9ca3af; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem;">
+          📍 Saipur, Kolkata, West Bengal, India
+        </p>
+        <p style="color: #9ca3af; font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.75rem;">
+          📞 WhatsApp: <a href="https://wa.me/918967211315" target="_blank" rel="noopener" style="color: #d4a93d; text-decoration: none; font-weight: 600;">+91 89672 11315</a>
+        </p>
+        <p style="color: #9ca3af; font-size: 0.95rem; margin: 0;">
+          🕒 Mon – Sat: 7:00 AM – 7:00 PM
+        </p>
+      </div>
+
+      <!-- Verified Business Google Map -->
+      <div>
+        <h4 style="color: #ffffff; font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+          Farm Location
+        </h4>
+        <div style="border-radius: 10px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 4px 14px rgba(0,0,0,0.25); height: 180px; width: 100%;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.599255604375!2d87.4038095!3d21.9115024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d29deb764f9cb%3A0xeb883f0be2e11057!2sUnifisher%20Farming!5e0!3m2!1sen!2sin!4v1793305975289!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0; display: block;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
         </div>
-    </footer>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar / Copyright -->
+    <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; font-size: 0.85rem; color: #9ca3af;">
+      <div>
+        &copy; {{ site.time | date: '%Y' }} Unifisher Farming. All rights reserved.
+      </div>
+      <div style="display: flex; gap: 1.25rem;">
+        <span>Sustainable Agriculture</span>
+        <span>•</span>
+        <span>Direct Farm Fresh</span>
+      </div>
+    </div>
+
+  </div>
+</footer>

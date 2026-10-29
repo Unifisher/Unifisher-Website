@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="index" style="background-color: #fffefa; margin: 0; padding: 0;">
+    {% include nav.html %}
+
+    <main style="width: 100%; min-height: 80vh; padding-top: 85px; box-sizing: border-box;">
+      
+      <!-- Back to Main Gallery Button -->
+      <div style="max-width: 1160px; margin: 0 auto; padding: 1.25rem clamp(1rem, 4vw, 2rem) 0; box-sizing: border-box;">
+        <a href="{{ '/#gallery' | relative_url }}" 
+           style="display: inline-flex; align-items: center; gap: 8px; color: #173e2d; text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 8px 16px; background-color: #f1f4ed; border: 1px solid rgba(23,62,45,0.14); border-radius: 6px; transition: background 0.2s ease;">
+          <span style="font-size: 1.1rem; line-height: 1;">←</span> Back to Main Gallery
+        </a>
+      </div>
+
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>

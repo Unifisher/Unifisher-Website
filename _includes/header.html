@@ -1,62 +1,74 @@
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-                <!-- <a class="navbar-brand" href="#page-top">
-                    <img src="/img/logos/unifisher-farming.jpeg" alt="Unifisher Farming" height="50">
-                    {{site.title}}
-                </a> -->
-            </div>
+<!-- TOP STICKY NAVBAR -->
+<header style="position: sticky; top: 0; z-index: 1000; width: 100%; background: #102c20; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-bottom: 1px solid rgba(255,255,255,0.1);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0.85rem 1.5rem; display: flex; align-items: center; justify-content: space-between;">
+    
+    <!-- Brand: Official Logo + Title -->
+    <a href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+      <img src="{{ '/img/logos/unifisher-farming.jpeg' | relative_url }}" 
+           alt="Unifisher Farming Logo" 
+           style="height: 46px; width: 46px; object-fit: contain; border-radius: 8px; background: #ffffff; padding: 2px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+      <span style="color: #ffffff; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        Unifisher Farming
+      </span>
+    </a>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#products">Products</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#about us">About Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+    <!-- Navigation Links & WhatsApp Action (Root-Relative URLs) -->
+    <nav style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="{{ '/#products' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Products</a>
+      <a href="{{ '/#upcoming' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Upcoming</a>
+      <a href="{{ '/#gallery' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Gallery</a>
+      <a href="{{ '/#recipes' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Recipes</a>
+      <a href="{{ '/#about' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">About</a>
+      <a href="{{ '/#contact' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Contact</a>
+      
+      <!-- Direct WhatsApp Enquiry Button -->
+      <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20enquire%20about%20your%20products." target="_blank" rel="noopener" 
+         style="background: #d4a93d; color: #102c20; font-size: 0.9rem; font-weight: 700; padding: 0.55rem 1.25rem; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 10px rgba(212,169,61,0.3);">
+        <span>Enquire</span> ↗
+      </a>
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Unifisher Farming!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#products" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
+  </div>
+</header>
 
+<!-- HERO INTRODUCTION BANNER -->
+<section style="background: linear-gradient(135deg, rgba(16, 44, 32, 0.95), rgba(23, 62, 45, 0.92)), url('{{ '/img/about/1.jpg' | relative_url }}') center/cover no-repeat; color: #ffffff; padding: clamp(4rem, 8vw, 6rem) 1.5rem clamp(3.5rem, 6vw, 5.5rem); text-align: left;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    
+    <div style="display: inline-block; background: rgba(212, 169, 61, 0.18); border: 1px solid rgba(212, 169, 61, 0.4); color: #f3c669; font-size: 0.825rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; padding: 0.4rem 1rem; border-radius: 9999px; margin-bottom: 1.5rem;">
+      🌿 Sustainable Agriculture & Mushroom Farming
+    </div>
+
+    <h1 style="color: #ffffff; font-size: clamp(2.3rem, 5vw, 4.2rem); font-weight: 800; line-height: 1.15; margin: 0 0 1.25rem; max-width: 850px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      Fresh, healthy food <br><span style="color: #d4a93d;">grown with care.</span>
+    </h1>
+
+    <p style="color: rgba(255, 255, 255, 0.88); font-size: clamp(1.05rem, 2vw, 1.2rem); line-height: 1.7; max-width: 640px; margin: 0 0 2.25rem;">
+      We cultivate premium oyster and specialty mushrooms with a dedicated focus on purity, sustainability, and trusted farm-to-table freshness.
+    </p>
+
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+      <a href="{{ '/#products' | relative_url }}" style="background: #d4a93d; color: #102c20; font-weight: 700; padding: 0.85rem 1.85rem; border-radius: 8px; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 15px rgba(212,169,61,0.35);">
+        Explore Products
+      </a>
+      <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20know%20more%20about%20your%20produce." target="_blank" rel="noopener" 
+         style="background: rgba(255,255,255,0.08); color: #ffffff; border: 1.5px solid rgba(255, 255, 255, 0.4); font-weight: 600; padding: 0.85rem 1.85rem; border-radius: 8px; text-decoration: none; font-size: 1rem;">
+        Chat on WhatsApp ↗
+      </a>
+    </div>
+
+    <!-- Quick Trust Badges -->
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: clamp(2.5rem, 5vw, 3.5rem); padding-top: 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+      <span style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(183, 228, 199, 0.25); color: #b7e4c7; padding: 6px 14px; border-radius: 999px; font-size: 0.88rem; font-weight: 600;">
+        ✓ 100% Organically Grown
+      </span>
+      <span style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(183, 228, 199, 0.25); color: #b7e4c7; padding: 6px 14px; border-radius: 999px; font-size: 0.88rem; font-weight: 600;">
+        ✓ Daily Fresh Harvest
+      </span>
+      <span style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(183, 228, 199, 0.25); color: #b7e4c7; padding: 6px 14px; border-radius: 999px; font-size: 0.88rem; font-weight: 600;">
+        ✓ Based in Saipur, Kolkata
+      </span>
+    </div>
+
+  </div>
+</section>
