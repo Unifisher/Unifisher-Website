@@ -1,104 +1,95 @@
-<footer style="background-color: #102c20; color: #f3f4f6; padding: clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem) 2rem; border-top: 4px solid #d4a93d; margin-top: clamp(2.5rem, 5vw, 4rem); break-inside: avoid; page-break-inside: avoid; box-sizing: border-box;">
-  <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 2.5rem;">
+<section id="recipes" style="padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem); background-color: #fcfbf7; border-top: 1px solid rgba(23,62,45,0.08);">
+  <div style="max-width: 1160px; margin: 0 auto;">
     
-    <!-- Brand / Column 1 -->
-    <div>
-      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
-        <img src="{{ '/img/logos/unifisher-farming.jpeg' | relative_url }}" alt="Unifisher Farming Logo" style="height: 42px; width: 42px; object-fit: contain; border-radius: 6px; background: #ffffff; padding: 2px;">
-        <h3 style="margin: 0; color: #ffffff; font-size: 1.25rem; font-weight: 700;">Unifisher Farming</h3>
-      </div>
-      <p style="color: rgba(255, 255, 255, 0.75); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.25rem;">
-        Thoughtful farming. Quality produce.<br>Growing a little better, every day.
+    <!-- Section Heading -->
+    <div style="text-align: center; margin-bottom: clamp(2rem, 5vw, 3.5rem);">
+      <p style="color: #3d7950; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
+        Farm to Table Flavors
       </p>
-      <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.8; margin: 0; font-size: 0.9rem; word-break: break-word;">
-        📍 Saipur, Kolkata, West Bengal, India<br>
-        ✉️ <a href="mailto:{{ site.email }}" style="color: #95d5b2; text-decoration: underline;">{{ site.email }}</a><br>
-        💬 WhatsApp: <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener" style="color: #95d5b2; text-decoration: underline;">+91 89672 11315</a><br>
-        🛡️ <span style="color: #f3c669; font-weight: 600;">FSSAI Reg No:</span> 22825231000098<br>
-        📋 <span style="color: #f3c669; font-weight: 600;">Udyam Reg No:</span> UDYAM-WB-16-0065084
+      <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+        Popular Mushroom Recipes
+      </h2>
+      <p style="color: #55635b; max-width: 620px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">
+        Discover delicious and easy ways to prepare our farm-fresh oyster, paddy straw, and button mushrooms at home.
       </p>
-
-      <!-- Social Media Links -->
-      <div style="margin-top: 1.25rem; display: flex; align-items: center; gap: 0.75rem;">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/UnifisherFarming/" target="_blank" rel="noopener noreferrer" title="Follow Unifisher Farming on Facebook"
-           style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.1); color: #ffffff; text-decoration: none; transition: all 0.25s ease;"
-           onmouseover="this.style.background='#1877F2'; this.style.color='#ffffff';"
-           onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.color='#ffffff';">
-          <i class="fa fa-facebook" style="font-size: 1.1rem;"></i>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/unifisherfarming/" target="_blank" rel="noopener noreferrer" title="Follow Unifisher Farming on Instagram"
-           style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.1); color: #ffffff; text-decoration: none; transition: all 0.25s ease;"
-           onmouseover="this.style.background='#E4405F'; this.style.color='#ffffff';"
-           onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.color='#ffffff';">
-          <i class="fa fa-instagram" style="font-size: 1.1rem;"></i>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/company/unifisher-farming/" target="_blank" rel="noopener noreferrer" title="Connect with Unifisher Farming on LinkedIn"
-           style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.1); color: #ffffff; text-decoration: none; transition: all 0.25s ease;"
-           onmouseover="this.style.background='#0A66C2'; this.style.color='#ffffff';"
-           onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.color='#ffffff';">
-          <i class="fa fa-linkedin" style="font-size: 1.1rem;"></i>
-        </a>
-      </div>
     </div>
 
-    <!-- Quick Links / Column 2 -->
-    <div>
-      <h4 style="color: #ffffff; margin-bottom: 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Links</h4>
-      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 0.95rem;">
-        <li><a href="{{ '/' | relative_url }}#products" style="color: rgba(255,255,255,0.8); text-decoration: none;">Products</a></li>
-        <li><a href="{{ '/' | relative_url }}#upcoming" style="color: rgba(255,255,255,0.8); text-decoration: none;">Upcoming</a></li>
-        <li><a href="{{ '/' | relative_url }}#gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
-        <li><a href="{{ '/' | relative_url }}#recipes" style="color: rgba(255,255,255,0.8); text-decoration: none;">Recipes</a></li>
-        <li><a href="{{ '/' | relative_url }}#about" style="color: rgba(255,255,255,0.8); text-decoration: none;">About Us</a></li>
-        <li><a href="{{ '/' | relative_url }}#why-us" style="color: rgba(255,255,255,0.8); text-decoration: none;">Why Us</a></li>
-        <li><a href="{{ '/' | relative_url }}#contact" style="color: rgba(255,255,255,0.8); text-decoration: none;">Contact</a></li>
-      </ul>
-    </div>
+    <!-- 3-Column Recipe Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1.25rem, 3vw, 2rem); align-items: stretch;">
 
-    <!-- Google Map / Column 3 -->
-    <div>
-      <h4 style="color: #ffffff; margin-bottom: 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Find Us on Map</h4>
-      <div style="background: #ffffff; border-radius: 8px; overflow: hidden; border: 2px solid rgba(212,169,61,0.5); box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 100%;">
-        <div style="width: 100%; height: 160px; background: #e5e7eb;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.599255604375!2d87.4038095!3d21.9115024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d29deb764f9cb%3A0xeb883f0be2e11057!2sUnifisher%20Farming!5e0!3m2!1sen!2sin!4v1793122297571!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="100%" 
-                  style="border:0;" 
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  title="Unifisher Farming Location Map">
-          </iframe>
+      <!-- Recipe 1: Chilli Garlic Oyster Mushrooms -->
+      <div class="recipe-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; transition: transform 0.25s ease, box-shadow 0.25s ease;">
+        <div style="position: relative; height: 210px; background-color: #e5e7eb; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Chilli Garlic Oyster Mushrooms" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+          <span style="position: absolute; bottom: 12px; left: 12px; background: rgba(16, 44, 32, 0.88); backdrop-filter: blur(4px); color: #f3c669; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.03em;">
+            ⏱ 15 Mins Prep
+          </span>
         </div>
-        <div style="background: #102c20; padding: 10px 12px; text-align: center;">
-          <a href="https://maps.app.goo.gl/u6HWx731t1iLLSG66" target="_blank" rel="noopener" style="color: #d4a93d; font-size: 0.85rem; font-weight: 700; text-decoration: none; display: inline-block;">
-            Open Exact Location in Google Maps ↗
-          </a>
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #b45309; letter-spacing: 0.05em; margin-bottom: 0.35rem; display: block;">Quick Appetizer</span>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #173e2d; margin: 0 0 0.65rem;">Chilli Garlic Oyster Mushrooms</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+            Pan-seared fresh oyster mushrooms tossed in roasted garlic, cracked pepper, soy, and fresh green scallions.
+          </p>
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+            <span style="background: #f1f5f2; color: #173e2d; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Oyster Mushroom</span>
+            <span style="background: #f1f5f2; color: #173e2d; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">High Protein</span>
+          </div>
         </div>
       </div>
+
+      <!-- Recipe 2: Creamy Garlic Mushroom Toast -->
+      <div class="recipe-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; transition: transform 0.25s ease, box-shadow 0.25s ease;">
+        <div style="position: relative; height: 210px; background-color: #e5e7eb; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Creamy Garlic Mushroom Toast" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+          <span style="position: absolute; bottom: 12px; left: 12px; background: rgba(16, 44, 32, 0.88); backdrop-filter: blur(4px); color: #f3c669; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.03em;">
+            ⏱ 20 Mins Prep
+          </span>
+        </div>
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #3d7950; letter-spacing: 0.05em; margin-bottom: 0.35rem; display: block;">Breakfast / Snack</span>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #173e2d; margin: 0 0 0.65rem;">Creamy Garlic Mushroom Toast</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+            Sliced button or oyster mushrooms cooked in creamy butter, thyme, and herbs layered over toasted sourdough bread.
+          </p>
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+            <span style="background: #f1f5f2; color: #173e2d; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Button Mushroom</span>
+            <span style="background: #f1f5f2; color: #173e2d; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Vegetarian</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe 3: Mushroom Masala Curry -->
+      <div class="recipe-card" style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; transition: transform 0.25s ease, box-shadow 0.25s ease;">
+        <div style="position: relative; height: 210px; background-color: #e5e7eb; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80" alt="Mushroom Masala Curry" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease;">
+          <span style="position: absolute; bottom: 12px; left: 12px; background: rgba(16, 44, 32, 0.88); backdrop-filter: blur(4px); color: #f3c669; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.03em;">
+            ⏱ 30 Mins Prep
+          </span>
+        </div>
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #b45309; letter-spacing: 0.05em; margin-bottom: 0.35rem; display: block;">Main Course</span>
+          <h3 style="font-size: 1.3rem; font-weight: 700; color: #173e2d; margin: 0 0 0.65rem;">Mushroom Masala Curry</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem; flex-grow: 1;">
+            Tender paddy straw or button mushrooms simmered in an aromatic onion, tomato, ginger-garlic, and garam masala gravy.
+          </p>
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+            <span style="background: #f1f5f2; color: #173e2d; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Paddy Straw</span>
+            <span style="background: #f1f5f2; color: #173e2d; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">Desi Style</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-
   </div>
+</section>
 
-  <!-- Bottom Copyright Bar -->
-  <div style="max-width: 1160px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.6);">
-    <span>© {{ site.time | date: '%Y' }} Unifisher Farming. All rights reserved.</span>
-    <span>Saipur, Kolkata · West Bengal, India</span>
-  </div>
-</footer>
-
-<!-- Floating WhatsApp Quick-Chat Widget -->
-<a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener" 
-   aria-label="Chat with Unifisher Farming on WhatsApp"
-   style="position: fixed; bottom: clamp(16px, 3vw, 25px); right: clamp(16px, 3vw, 25px); z-index: 9999; background-color: #25d366; color: #ffffff; width: clamp(48px, 10vw, 58px); height: clamp(48px, 10vw, 58px); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.3); text-decoration: none; transition: transform 0.25s ease;"
-   onmouseover="this.style.transform='scale(1.08)'" 
-   onmouseout="this.style.transform='scale(1)'">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 55%; height: 55%; fill: #ffffff;">
-    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.6 66.4 14 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-  </svg>
-</a>
+<style>
+  .recipe-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(16, 44, 32, 0.12) !important;
+  }
+  .recipe-card:hover img {
+    transform: scale(1.04);
+  }
+</style>
