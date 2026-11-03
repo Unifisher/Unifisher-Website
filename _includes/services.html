@@ -14,7 +14,7 @@
       </p>
     </div>
 
-    <!-- Product Grid (3 Balanced Columns on Desktop) -->
+    <!-- Product Grid -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1.25rem, 3vw, 2rem); align-items: stretch;">
       
       <!-- Product 1: Oyster Mushroom -->
@@ -23,9 +23,25 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #2e7d32; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block;"></span> Harvest Ready
         </div>
-        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
-          <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Oyster Mushroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+        <!-- Multi-Photo Slider -->
+        <div class="product-slider" data-current="0" style="position: relative; height: 220px; background: #e5e7eb; overflow: hidden;">
+          <div class="slider-track" style="display: flex; width: 100%; height: 100%; transition: transform 0.35s ease;">
+            <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Oyster Mushroom Harvest" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Oyster Mushroom Bed" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Oyster Mushroom Culture" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <!-- Controls -->
+          <button type="button" onclick="moveSlide(this, -1)" aria-label="Previous image" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.2s;">‹</button>
+          <button type="button" onclick="moveSlide(this, 1)" aria-label="Next image" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background 0.2s;">›</button>
+          <!-- Dots Indicator -->
+          <div class="slider-dots" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 1;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+          </div>
         </div>
+
         <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Oyster Mushroom</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
@@ -44,9 +60,23 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b45309; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #f59e0b; border-radius: 50%; display: inline-block;"></span> Seasonal / Limited
         </div>
-        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
-          <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Paddy Straw Mushroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+        <!-- Multi-Photo Slider -->
+        <div class="product-slider" data-current="0" style="position: relative; height: 220px; background: #e5e7eb; overflow: hidden;">
+          <div class="slider-track" style="display: flex; width: 100%; height: 100%; transition: transform 0.35s ease;">
+            <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Paddy Straw Mushroom" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Paddy Straw Fresh" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <!-- Controls -->
+          <button type="button" onclick="moveSlide(this, -1)" aria-label="Previous image" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">‹</button>
+          <button type="button" onclick="moveSlide(this, 1)" aria-label="Next image" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">›</button>
+          <!-- Dots Indicator -->
+          <div class="slider-dots" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 1;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+          </div>
         </div>
+
         <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Paddy Straw Mushroom</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
@@ -65,9 +95,23 @@
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b91c1c; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
           <span style="width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%; display: inline-block;"></span> Not Available
         </div>
-        <div style="height: 220px; background: #e5e7eb; overflow: hidden;">
-          <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Button Mushroom" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+        <!-- Multi-Photo Slider -->
+        <div class="product-slider" data-current="0" style="position: relative; height: 220px; background: #e5e7eb; overflow: hidden;">
+          <div class="slider-track" style="display: flex; width: 100%; height: 100%; transition: transform 0.35s ease;">
+            <img src="{{ '/img/about/3.jpeg' | relative_url }}" alt="Button Mushroom" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="{{ '/img/about/1.jpg' | relative_url }}" alt="Button Mushroom Harvest" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <!-- Controls -->
+          <button type="button" onclick="moveSlide(this, -1)" aria-label="Previous image" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">‹</button>
+          <button type="button" onclick="moveSlide(this, 1)" aria-label="Next image" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">›</button>
+          <!-- Dots Indicator -->
+          <div class="slider-dots" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 1;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+          </div>
         </div>
+
         <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
           <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Button Mushroom</h3>
           <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
@@ -83,3 +127,23 @@
     </div>
   </div>
 </section>
+
+<!-- Embedded Minimal Slider Script -->
+<script>
+  function moveSlide(button, direction) {
+    const slider = button.closest('.product-slider');
+    const track = slider.querySelector('.slider-track');
+    const dots = slider.querySelectorAll('.slider-dots span');
+    const totalSlides = track.children.length;
+    let currentIndex = parseInt(slider.getAttribute('data-current') || '0', 10);
+
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    slider.setAttribute('data-current', currentIndex);
+
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    dots.forEach((dot, idx) => {
+      dot.style.opacity = idx === currentIndex ? '1' : '0.45';
+    });
+  }
+</script>
