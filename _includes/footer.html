@@ -77,34 +77,14 @@
         <span>Sustainable Agriculture</span>
         <span>•</span>
         <span>Direct Farm Fresh</span>
-
-        <!-- Subtle, unhighlighted visitor counter -->
-        <span id="visitor-wrapper" style="display: none; align-items: center; gap: 0.35rem; color: rgba(156, 163, 175, 0.7); font-size: 0.75rem;">
-          <span>•</span>
-          <span>Visits: <strong id="visitor-count" style="font-weight: 500; color: rgba(209, 213, 219, 0.85);"></strong></span>
+        <span>•</span>
+        <span style="display: inline-flex; align-items: center; opacity: 0.65; vertical-align: middle;" title="Total Visits">
+          <img src="https://komarev.com/ghpvc/?username=Unifisher-Farming-Web&label=Visits&color=173e2d&style=flat-square" 
+               alt="Visits" 
+               style="height: 18px; border-radius: 3px; display: inline-block;">
         </span>
       </div>
     </div>
 
   </div>
-
-  <script>
-    (function() {
-      const wrapper = document.getElementById('visitor-wrapper');
-      const countEl = document.getElementById('visitor-count');
-      if (!countEl || !wrapper) return;
-
-      fetch('https://api.counterapi.dev/v1/unifisher-farming/visits/up')
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-          if (data && typeof data.count !== 'undefined') {
-            countEl.textContent = Number(data.count).toLocaleString();
-            wrapper.style.display = 'inline-flex';
-          }
-        })
-        .catch(function() {
-          wrapper.style.display = 'none';
-        });
-    })();
-  </script>
 </footer>
