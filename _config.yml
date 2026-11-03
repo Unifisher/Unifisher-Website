@@ -1,4 +1,4 @@
-url: "https://www.unifisher.com"
+url: "https://unifisher.com"
 baseurl: ""
 
 # Site settings
@@ -23,3 +23,11 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Exclude unnecessary repo files from GitHub Pages build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - SECURITY.md
+  - .vscode/
