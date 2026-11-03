@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body id="page-top" class="subpage" style="background-color: #fffefa; margin: 0; padding: 0; min-height: 100vh; display: flex; flex-direction: column;">
+    
+    <!-- Unified Sticky Top Navbar -->
+    <header style="position: sticky; top: 0; z-index: 1000; width: 100%; background: #102c20; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-bottom: 1px solid rgba(255,255,255,0.1);">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0.85rem 1.5rem; display: flex; align-items: center; justify-content: space-between;">
+        
+        <a href="{{ '/' | relative_url }}" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+          <img src="{{ '/img/logos/unifisher-farming.jpeg' | relative_url }}" 
+               alt="Unifisher Farming Logo" 
+               style="height: 44px; width: 44px; object-fit: contain; border-radius: 8px; background: #ffffff; padding: 2px;">
+          <span style="color: #ffffff; font-size: 1.3rem; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+            Unifisher Farming
+          </span>
+        </a>
+
+        <nav style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="{{ '/#products' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Products</a>
+          <a href="{{ '/#upcoming' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Upcoming</a>
+          <a href="{{ '/#gallery' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Gallery</a>
+          <a href="{{ '/#recipes' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Recipes</a>
+          <a href="{{ '/#about' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">About</a>
+          <a href="{{ '/#contact' | relative_url }}" style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; text-decoration: none;">Contact</a>
+          
+          <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20I%20would%20like%20to%20enquire%20about%20your%20produce." target="_blank" rel="noopener" 
+             style="background: #d4a93d; color: #102c20; font-size: 0.9rem; font-weight: 700; padding: 0.5rem 1.15rem; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+            <span>Enquire</span> ↗
+          </a>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Page Body Container -->
+    <main style="flex: 1 0 auto; width: 100%; max-width: 1160px; margin: 0 auto; padding: 1.5rem clamp(1rem, 4vw, 2rem) 4rem; box-sizing: border-box;">
+      
+      <!-- Back Link -->
+      <div style="margin-bottom: 2rem;">
+        <a href="{{ '/#gallery' | relative_url }}" 
+           style="display: inline-flex; align-items: center; gap: 8px; color: #173e2d; text-decoration: none; font-weight: 700; font-size: 0.92rem; padding: 8px 16px; background-color: #f1f4ed; border: 1px solid rgba(23,62,45,0.14); border-radius: 6px;">
+          ← Back to Main Gallery
+        </a>
+      </div>
+
+      <!-- Injected Subpage Content -->
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

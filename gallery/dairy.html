@@ -1,0 +1,136 @@
+<section id="products" style="padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 4vw, 2rem); background-color: #fffefa;">
+  <div style="max-width: 1160px; margin: 0 auto;">
+    
+    <!-- Section Heading -->
+    <div style="text-align: center; margin-bottom: clamp(2rem, 5vw, 3.5rem);">
+      <p style="color: #3d7950; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">
+        From our growing journey
+      </p>
+      <h2 style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: #173e2d; margin: 0 0 0.75rem;">
+        Our Products
+      </h2>
+      <p style="color: #55635b; max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">
+        Fresh produce cultivated with care, purity, and sustainability. Check real-time availability below and get in touch for stock and pricing.
+      </p>
+    </div>
+
+    <!-- Product Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(1.25rem, 3vw, 2rem); align-items: stretch;">
+      
+      <!-- Product 1: Oyster Mushroom -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; position: relative;">
+        <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #2e7d32; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
+          <span style="width: 8px; height: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block;"></span> Harvest Ready
+        </div>
+
+        <div class="product-slider" data-current="0" style="position: relative; height: 220px; background: #e5e7eb; overflow: hidden;">
+          <div class="slider-track" style="display: flex; width: 100%; height: 100%; transition: transform 0.35s ease;">
+            <img src="{{ '/img/about/2.jpg' | relative_url }}" alt="Fresh Oyster Mushroom Harvest" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=800&q=80" alt="Oyster Mushroom Clusters" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <button type="button" onclick="moveSlide(this, -1)" aria-label="Previous" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">‹</button>
+          <button type="button" onclick="moveSlide(this, 1)" aria-label="Next" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">›</button>
+          <div class="slider-dots" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 1;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+          </div>
+        </div>
+
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Oyster Mushroom</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+            Premium quality, rich in nutrition, and available year-round for everyday home meals and food businesses.
+          </p>
+          <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20please%20share%20availability%20for%20Oyster%20Mushroom" target="_blank" rel="noopener" 
+             style="color: #173e2d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            Ask about availability ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 2: Paddy Straw Mushroom -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; position: relative;">
+        <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b45309; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
+          <span style="width: 8px; height: 8px; background-color: #f59e0b; border-radius: 50%; display: inline-block;"></span> Seasonal / Limited
+        </div>
+
+        <div class="product-slider" data-current="0" style="position: relative; height: 220px; background: #e5e7eb; overflow: hidden;">
+          <div class="slider-track" style="display: flex; width: 100%; height: 100%; transition: transform 0.35s ease;">
+            <!-- Authentic Paddy Straw Mushroom (Volvariella volvacea) egg/button stages -->
+            <img src="https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=800&q=80" alt="Fresh Paddy Straw Mushrooms" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="https://images.unsplash.com/photo-1546749836-3983a54b3837?auto=format&fit=crop&w=800&q=80" alt="Paddy Straw Mushroom Cultivation" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <button type="button" onclick="moveSlide(this, -1)" aria-label="Previous" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">‹</button>
+          <button type="button" onclick="moveSlide(this, 1)" aria-label="Next" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">›</button>
+          <div class="slider-dots" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 1;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+          </div>
+        </div>
+
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Paddy Straw Mushroom</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+            Highly valued for rich aroma, freshness, and traditional organic straw-bed cultivation.
+          </p>
+          <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20please%20share%20availability%20for%20Paddy%20Straw%20Mushroom" target="_blank" rel="noopener" 
+             style="color: #173e2d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            Ask about availability ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 3: Button Mushroom -->
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,62,45,0.08); box-shadow: 0 10px 30px rgba(16,44,32,0.06); display: flex; flex-direction: column; position: relative;">
+        <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; color: #b91c1c; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 5px; z-index: 10;">
+          <span style="width: 8px; height: 8px; background-color: #ef4444; border-radius: 50%; display: inline-block;"></span> Not Available
+        </div>
+
+        <div class="product-slider" data-current="0" style="position: relative; height: 220px; background: #e5e7eb; overflow: hidden;">
+          <div class="slider-track" style="display: flex; width: 100%; height: 100%; transition: transform 0.35s ease;">
+            <!-- Authentic White Button Mushroom (Agaricus bisporus) -->
+            <img src="https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?auto=format&fit=crop&w=800&q=80" alt="White Button Mushroom Fresh" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="https://images.unsplash.com/photo-1588615419957-8973b401086a?auto=format&fit=crop&w=800&q=80" alt="Button Mushroom Harvest" style="min-width: 100%; height: 100%; object-fit: cover; display: block;">
+          </div>
+          <button type="button" onclick="moveSlide(this, -1)" aria-label="Previous" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">‹</button>
+          <button type="button" onclick="moveSlide(this, 1)" aria-label="Next" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(16,44,32,0.65); color: #ffffff; border: none; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; font-size: 15px; display: flex; align-items: center; justify-content: center; z-index: 5;">›</button>
+          <div class="slider-dots" style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 1;"></span>
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #ffffff; opacity: 0.45;"></span>
+          </div>
+        </div>
+
+        <div style="padding: 1.75rem 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #1d2b22; margin: 0 0 0.75rem;">Button Mushroom</h3>
+          <p style="color: #55635b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">
+            Classic plump white buttons with clean texture, ideal for continental, sauté, and curried preparations.
+          </p>
+          <a href="https://wa.me/918967211315?text=Hello%20Unifisher%20Farming,%20is%20Button%20Mushroom%20back%20in%20stock?" target="_blank" rel="noopener" 
+             style="color: #173e2d; font-weight: 700; font-size: 0.95rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            Ask about availability ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function moveSlide(button, direction) {
+    const slider = button.closest('.product-slider');
+    const track = slider.querySelector('.slider-track');
+    const dots = slider.querySelectorAll('.slider-dots span');
+    const totalSlides = track.children.length;
+    let currentIndex = parseInt(slider.getAttribute('data-current') || '0', 10);
+
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    slider.setAttribute('data-current', currentIndex);
+
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    dots.forEach((dot, idx) => {
+      dot.style.opacity = idx === currentIndex ? '1' : '0.45';
+    });
+  }
+</script>
